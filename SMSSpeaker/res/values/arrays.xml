@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="languages">
+		<item>English</item>
+	</string-array>
+	
+	<string-array name="speeds">
+		<item>Very Slow</item>
+		<item>Slow</item>
+		<item>Normal</item>
+		<item>Fast</item>
+		<item>Very Fast</item>
+	</string-array>
+	
+	
+	<string-array name="speedrates">
+		<item>0.1</item>
+		<item>0.5</item>
+		<item>1.0</item>
+		<item>1.5</item>
+		<item>2.5</item>
+	</string-array>
+	
+	
+	<string-array name="ringermodes">
+		<item>Default</item>
+		<item>Normal</item>
+		<item>Vibrate</item>
+		<item>Silent</item>
+	</string-array>
+	
+	
+</resources>

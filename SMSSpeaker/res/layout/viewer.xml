@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@android:id/text1"
+        style="@style/msg_subject" />
+
+    <TextView
+        android:id="@android:id/text2"
+        style="@style/msg_details"/>
+
+</TwoLineListItem>

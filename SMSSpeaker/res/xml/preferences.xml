@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enableSMSSpeakerPref"
+            android:summary="Listen to incoming call and SMS"
+            android:title="Enable SMS Speaker" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enableAutoDisconnectPref"
+            android:summary="Automatic disconnect incoming call"
+            android:title="Disconnect Incoming Call" />
+        <ListPreference
+            android:defaultValue="Default"
+            android:entries="@array/ringermodes"
+            android:entryValues="@array/ringermodes"
+            android:key="ringerModePref"
+            android:summary="Control ringer mode for incoming call"
+            android:title="Ringer Mode" />
+        <ListPreference
+            android:entries="@array/languages"
+            android:entryValues="@array/languages"
+            android:key="languagePref"
+            android:summary="Choose a language"
+            android:title="Choose Language" />
+        <ListPreference
+            android:defaultValue="1.0"
+            android:entries="@array/speeds"
+            android:entryValues="@array/speedrates"
+            android:key="languageSpeedPref"
+            android:summary="Choose a language speed"
+            android:title="Choose Language Speed" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enableAutoresponderPref"
+            android:summary="Automatically send a SMS back to the sender"
+            android:title="Enable Autoresponder" />
+
+        <EditTextPreference
+            android:name="Autoresponder Text"
+            android:defaultValue=""
+            android:enabled="true"
+            android:key="autoresponderTextPref"
+            android:summary="Enter the SMS content to send back"
+            android:title="Autoresponder Text" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

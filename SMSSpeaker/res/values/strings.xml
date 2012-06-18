@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Speaker</string>
+    <string name="tab_setup">Setup</string>
+    <string name="tab_help">Help</string>
+    <string name="tab_viewer">SMS Viewer</string>
+    <string name="msg_tts_not_available">Text to speech feature not available.</string>
+    <string name="msg_call_from" formatted="false">Incoming call from %1$s</string>
+    <string name="msg_confirm_exit">Are you sure you want to exit?</string>
+    <string name="msg_confirm_delete">Are you sure you want to delete all data?</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="menu_delete_all">Delete All</string>
+    <string name="default_autoresponder_text">I am not able to reply you now - message from autoresponder.</string>
+</resources>
