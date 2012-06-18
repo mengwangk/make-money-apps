@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.mylotto" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:allowClearUserData="true" android:name=".MyLottoApplication">
+
+		<activity android:label="@string/app_name_splash"
+			android:name=".Splash">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Analysis" android:label="@string/app_name_analysis">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_ANALYSIS" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MyBet" android:label="@string/app_name_mybet">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_MYBET" />
+			</intent-filter>
+		</activity>
+
+
+		<activity android:name=".NumberAnalysis" android:label="@string/app_name_number_analysis">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_NUMBER_ANALYSIS" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".NumberAnalysisView"
+			android:label="@string/app_name_number_analysis_results">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_NUMBER_ANALYSIS_RESULTS" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".FrequencyPrediction"
+			android:label="@string/app_name_frequency_prediction">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_FREQUENCY_PREDICTION" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".FrequencyPredictionView"
+			android:label="@string/app_name_frequency_prediction_results">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_FREQUENCY_PREDICTION_RESULTS" />
+			</intent-filter>
+		</activity>
+
+
+		<activity android:name=".HotColdPrediction" android:label="@string/app_name_hot_cold_prediction">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_HOT_COLD_PREDICTION" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".LottoList" android:label="@string/app_name_lottolist">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_LOTTO" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Settings" android:label="@string/app_name_settings">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_SETTINGS" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Results" android:label="@string/app_name_results">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_RESULTS" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".LiveResults" android:label="@string/app_name_live_results">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.mylotto.VIEW_LIVE_RESULTS" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Dashboard" android:label="@string/app_name_dashboard">
+		</activity>
+
+		<service android:name="com.mylotto.service.LottoService"
+			android:process=":lottoservice" />
+
+		<service android:name="com.mylotto.service.LottoMessengerService"
+			android:process=":lottoservice" android:exported="true">
+			<intent-filter>
+				<action android:name="com.mylotto.service.ILottoMessenger" />
+			</intent-filter>
+		</service>
+
+	</application>
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

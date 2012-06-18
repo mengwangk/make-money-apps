@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	
+	<TextView android:text="@string/label_matched_no" android:id="@+id/textView1" 
+	android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></TextView>
+	
+	<EditText android:inputType="number" android:text="9160" android:layout_height="wrap_content" android:layout_width="200dp" android:id="@+id/matchno" android:layout_alignParentTop="true" android:layout_alignLeft="@+id/lottolist"></EditText>
+	
+	<TextView android:text="@string/label_lotto" android:id="@+id/textView2" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" android:layout_below="@+id/matchno" android:layout_alignParentLeft="true"></TextView>
+	
+	<Spinner android:id="@+id/lottolist" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignTop="@+id/textView2" android:layout_toRightOf="@+id/textView3" android:layout_marginLeft="20dp"></Spinner>
+	
+	<TextView android:text="@string/label_past_draw" android:id="@+id/textView3" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignTop="@+id/noofpastdraw" android:layout_alignParentLeft="true"></TextView>
+	<EditText android:inputType="number" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/noofpastdraw" android:layout_below="@+id/lottolist" android:layout_alignLeft="@+id/lottolist" android:layout_alignRight="@+id/lottolist"></EditText>
+	
+	<CheckBox android:text="@string/label_match_exact" android:id="@+id/matchexact" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/noofpastdraw" android:layout_alignLeft="@+id/noofpastdraw"></CheckBox>
+	
+	<Button android:id="@+id/analyze" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/label_analyze" android:layout_below="@+id/matchexact" android:layout_centerHorizontal="true"></Button>
+	
+</RelativeLayout>

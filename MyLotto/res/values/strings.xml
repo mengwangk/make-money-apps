@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">MyLotto</string>
+	<string name="app_name_splash">MyLotto</string>
+	<string name="app_name_analysis">MyLotto - Analysis</string>
+	<string name="app_name_mybet">MyLotto - My Bet</string>
+	<string name="app_name_lottolist">MyLotto - Lotto</string>
+	<string name="app_name_settings">MyLotto - Settings</string>
+	<string name="app_name_dashboard">MyLotto - Dashboard</string>
+	<string name="app_name_results">MyLotto - Results for %s</string>
+	<string name="app_name_live_results">MyLotto - Live Results</string>
+	<string name="app_name_number_analysis">MyLotto - Number Analysis</string>
+	<string name="app_name_number_analysis_results">MyLotto - Number Analysis Results</string>
+	<string name="app_name_frequency_prediction">MyLotto - Frequency Prediction</string>
+	<string name="app_name_frequency_prediction_results">MyLotto - Frequency Prediction Results</string>
+	<string name="app_name_hot_cold_prediction">MyLotto - Hot Cold Prediction</string>
+
+
+	<string name="loading">Loading...</string>
+	<string name="service_starting">Starting service...</string>
+	<string name="service_started">Loading completed...</string>
+	<string name="service_start_failed">Failed to start application</string>
+	<string name="version">Version 1.0.0</string>
+	<string name="mybet">My Bet</string>
+	<string name="lotto">Lotto</string>
+	<string name="analysis">Analysis</string>
+	<string name="settings">Settings</string>
+	<string name="live_results">Live Results</string>
+	<string name="exit">Exit</string>
+	<string name="unknown_user">Unknown user. Select Settings</string>
+	<string name="menu_exit">Exit</string>
+	<string name="menu_back">Back</string>
+	<string name="no_data">No data</string>
+	<string name="user">User</string>
+
+	<string name="working">Working...</string>
+	<string name="retrieving">Retrieving...</string>
+	<string name="user_name">User Name</string>
+	<string name="no_of_draw">No of Draw</string>
+	<string name="password">Password</string>
+	<string name="country">Country</string>
+	<string name="save_settings">Save Settings</string>
+
+
+	<string name="status_sync_not_start">Synchronization not started</string>
+	<string name="status_sync_in_progress">Checking for latest results</string>
+	<string name="status_sync_successful">Latest results are downloaded</string>
+	<string name="status_sync_failure">Unable to get latest results. Check your network
+		connection
+	</string>
+
+	<string name="message_network_not_available">Network not available. Unable to synchronize
+		results
+	</string>
+	<string name="message_synchronizing">Checking results with server</string>
+	<string name="message_sync_successful">Synchronization completed</string>
+	<string name="message_sync_failed">Synchronization failed</string>
+
+	<string name="message_number_analysis">Number Analysis</string>
+	<string name="message_prediction_analysis">Prediction Analysis</string>
+	<string name="message_analysis_in_progress">Performing analysis</string>
+	<string name="message_frequency_prediction_in_progress">Performing frequency prediction</string>
+	<string name="message_history_retrieved">Past draws are retrieved. Analyze now</string>
+	<string name="message_perform_sum_of_digits_analysis">Performing sum of digits analysis</string>
+	<string name="message_check_top_pairings">Checking top pairings</string>
+	<string name="message_generating_possible_combinations">Generating combinations</string>
+	<string name="message_check_probability">Checking matches</string>
+	<string name="message_analyze_draw" formatted="false">Analyze draw %1$s/%2$s
+		[%3$s, %4$s]</string>
+	<string name="message_perform_frequency_analysis">Performing frequency analysis</string>
+	<string name="message_perform_trend_analysis">Performing trend analysis %1$s/%2$s
+		[%3$s, %4$s]</string>
+
+
+	<string name="label_matched_no">Number</string>
+	<string name="label_analyze">Analyze</string>
+	<string name="label_match_exact">Exact Match</string>
+	<string name="label_matched_draw">Matched Draw</string>
+	<string name="label_analysis">Analysis</string>
+	<string name="label_prediction">Prediction</string>
+	<string name="label_top_pairings">Top Pairings</string>
+	<string name="label_possible_combinations">Possible Combinations</string>
+	<string name="label_probability">Matches</string>
+	<string name="label_total_matched">Total matched</string>
+	<string name="label_total_exact_matched">Total exact matched</string>
+	<string name="label_total_random_matched">Total random matched</string>
+	<string name="label_total_exact_matched_top3">Total exact matched top 3</string>
+	<string name="label_total_random_matched_top3">Total random matched top 3</string>
+	<string name="label_average_draw_gap">Average draw gap</string>
+	<string name="label_gaps">Gaps</string>
+	<string name="label_from">From</string>
+	<string name="label_until">Until</string>
+	<string name="label_total_draws">Total draws</string>
+	<string name="label_predicted_next_draw">Predicted next draw</string>
+	<string name="label_first_match_on">First match on</string>
+	<string name="label_last_match_on">Last match on</string>
+	<string name="label_no">No</string>
+	<string name="label_prize">Prize</string>
+	<string name="label_draw_date">Draw Date</string>
+	<string name="label_freq_prediction">Frequency Prediction</string>
+	<string name="label_position_freq">Position Frequency</string>
+	<string name="label_position_1">Pos 1</string>
+	<string name="label_position_2">Pos 2</string>
+	<string name="label_position_3">Pos 3</string>
+	<string name="label_position_4">Pos 4</string>
+	<string name="label_total">Total</string>
+	<string name="label_pairing_freq">Pairing Frequency</string>
+	<string name="label_sum_of_digits">Sum of Digits</string>
+	<string name="label_sum_of_digits_summary">Possible sum ranges from 0 to 36. Actual frequencies are shown below:</string>
+	<string name="label_sum">Sum</string>
+	<string name="label_frequencies">Frequencies</string>
+	<string name="label_percentage">Percentage</string>
+	<string name="label_sum_start">Sum start</string>
+	<string name="label_sum_end">Sum end</string>
+	<string name="label_total_combinations">Total combinations: %s</string>
+	<string name="label_yes">Yes</string>
+
+	<string name="alert_user_name">Please enter an user name.</string>
+	<string name="alert_draw_no_blank">You must enter a valid draw no.</string>
+	<string name="alert_no_of_draw_required">Invalid number of draw. Value must be from 1 to %s.</string>
+	<string name="alert_number_analysis_failed">Unable to perform number analysis. No matches found.</string>
+	<string name="alert_freq_prediction_failed">Unable to perform frequency prediction.</string>
+	<string name="alert_invalid_date_range">From date must be greater than to date</string>
+
+	<string name="label_lotto">Lotto</string>
+	<string name="label_last">Last</string>
+	<string name="label_past_draw">No of Past Draw</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <ImageView
+  	  android:id="@+id/image"
+	  android:layout_width="64dip"
+	  android:layout_height="48dip" android:src="@drawable/logo" android:scaleType="centerCrop" android:layout_margin="15dip"/>
+  <TextView
+  	  android:id="@+id/text"
+  	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_weight="1" android:layout_gravity="left|center_vertical" android:textSize="30dip" android:layout_marginLeft="30dip"/>
+
+</LinearLayout>
