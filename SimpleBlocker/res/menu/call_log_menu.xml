@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_refresh_call_log"
+        android:icon="@drawable/ic_menu_refresh"
+        android:showAsAction="always"
+        android:title="@string/menu_label_refresh_call_log"/>
+    <item
+        android:id="@+id/menu_clear_call_log"
+        android:icon="@drawable/ic_menu_cross"
+        android:showAsAction="always"
+        android:title="string/menu_label_clear_call_log"/>
+
+</menu>

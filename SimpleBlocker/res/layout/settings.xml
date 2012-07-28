@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="5dip"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="horizontal|vertical" >
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/servicestartstop"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dip"
+                android:text="@string/label_service_start_stop" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ToggleButton
+                android:id="@+id/startstop"
+                android:textOff="@string/label_start"
+                android:textOn="@string/label_stop" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="40dp" >
+
+            <Button
+                android:id="@+id/callsettings"
+                android:text="@string/label_call_settings" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/blockrules"
+                android:text="@string/label_block_rules" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_blocked_contact"
+        android:icon="@drawable/ic_menu_plus"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_label_add_blocked_contact">
+        <menu>
+            <item
+                android:id="@+id/menu_add_from_contact"
+                android:icon="@drawable/ic_menu_contact"
+                android:title="@string/menu_label_add_from_contact"/>
+            <item
+                android:id="@+id/menu_add_from_call_log"
+                android:icon="@drawable/ic_menu_call_log"
+                android:title="@string/menu_label_add_from_call_log"/>
+            
+             <item
+                android:id="@+id/menu_add_manual"
+                android:icon="@drawable/ic_menu_manual"
+                android:title="@string/menu_label_add_manual"/>
+             
+        </menu>
+    </item>
+    
+    <item
+        android:id="@+id/menu_delete_blocked_contact"
+        android:icon="@drawable/ic_menu_cross"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_label_delete_blocked_contact"/>
+
+</menu>

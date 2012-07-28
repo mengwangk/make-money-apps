@@ -1,0 +1,58 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+DND Call Blocker
+A simple Android application that automatically block unwanted incoming calls.
+Copyright (c) 2010 Zoltan Meleg, android+dndcb@zoliweb.hu
+
+This file is part of DND Call Blocker.
+
+DND Call Blocker is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+DND Call Blocker is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with DND Call Blocker.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+	<CheckBoxPreference android:key="enabled"
+		android:title="@string/title_enabled" android:summaryOff="@string/sum_off_enabled"
+		android:summaryOn="@string/sum_on_enabled" />
+	<CheckBoxPreference android:key="stat_notify"
+		android:title="@string/title_stat_notify" android:summaryOff="@string/sum_off_stat_notify"
+		android:summaryOn="@string/sum_on_stat_notify" android:defaultValue="true"/>
+	<PreferenceCategory android:title="@string/title_behaviour">
+		<ListPreference android:key="handle_call"
+			android:title="@string/title_handle_call" android:entries="@array/handle_call"
+			android:entryValues="@array/handle_call_values" android:defaultValue="block" />
+		<CheckBoxPreference android:key="handle_history"
+		android:title="@string/title_handle_history" android:summaryOff="@string/sum_off_history"
+		android:summaryOn="@string/sum_on_history" android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/title_number_rules">
+		<CheckBoxPreference android:key="block_all"
+			android:title="@string/title_block_all" android:summary="@string/sum_block_all" />
+		<CheckBoxPreference android:key="block_unknown"
+			android:title="@string/title_block_unknown" android:summary="@string/sum_block_unknown" />
+		<CheckBoxPreference android:key="block_list"
+			android:title="@string/title_block_list" android:summary="@string/sum_block_list" />
+		<PreferenceScreen android:title="@string/title_block_list_mngmnt"
+			android:summary="@string/sum_block_list_mngmnt">
+			<intent android:targetPackage="hu.zoliweb.android.dndcallblocker"
+				android:targetClass="hu.zoliweb.android.dndcallblocker.DNDCallBlockerBlackListActivity"
+				android:data="mydata" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/title_number_exceptions">
+		<ListPreference android:key="number_exceptions"
+			android:title="@string/title_number_exceptions" android:entries="@array/number_exceptions"
+			android:entryValues="@array/number_exceptions_values"
+			android:defaultValue="none" />
+	</PreferenceCategory>
+</PreferenceScreen>

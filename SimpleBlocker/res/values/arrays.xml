@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="number_exceptions">
+        <item>No Exception</item>
+        <item>Except My Contacts</item>
+        <item>Except Starred Contacts</item>
+    </string-array>
+    <string-array name="number_exceptions_values">
+        <item>none</item>
+        <item>contacts</item>
+        <item>starred</item>
+    </string-array>
+    <string-array name="handle_call">
+        <item>Hang up call</item>
+        <item>Silent the call</item>
+    </string-array>
+    <string-array name="block_type">
+        <item>Blocked Contacts</item>
+        <item>Unknown and Blocked Contacts</item>
+        <item>Unknown Calls</item>
+        <item>Blocked All</item>
+    </string-array>
+    <string-array name="manual_phonenumber_types">
+        <item>Exactly</item>
+        <item>Start with…</item>
+        <item>Contains…</item>
+        <item>End with…</item>
+    </string-array>
+
+</resources>

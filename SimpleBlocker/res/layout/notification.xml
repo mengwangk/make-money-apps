@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout		
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		
+		<ImageView
+			android:id="@+id/quitesleep_notification.image"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_alignParentLeft="true" 
+			android:contentDescription="@string/msg_app_image"
+			/>
+		
+		<TextView            
+			android:layout_toRightOf="@id/quitesleep_notification.image"
+			android:layout_alignBaseline="@id/quitesleep_notification.image"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:id="@+id/quitesleep_notification.message"
+            android:text="@string/msg_notification" />
+            
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_blocked_call_log"
+        android:icon="@drawable/ic_menu_plus"
+        android:showAsAction="always"
+        android:title="@string/menu_label_add_blocked_call_log"/>
+
+</menu>

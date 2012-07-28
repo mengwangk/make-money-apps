@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleBlocker</string>
+
+    <!-- Label -->
+    <string name="label_tab_call_log">Call Log</string>
+    <string name="label_tab_blocked_list">Blocked List</string>
+    <string name="label_tab_settings">Settings</string>
+    <string name="label_dialog_yes">Yes</string>
+    <string name="label_dialog_no">No</string>
+    <string name="label_dialog_ok">OK</string>
+    <string name="label_dialog_cancel">Cancel</string>
+    <string name="label_title_main">Main</string>
+    <string name="label_title_get_contacts">My Contacts</string>
+    <string name="label_title_get_call_logs">Call Logs</string>
+    <string name="label_no_available">N/A</string>
+    <string name="label_call_type_indicator">Call type indicator</string>
+    <string name="label_title_add_contacts">Add Contacts</string>
+    <string name="label_title_add_call_logs">Add Call logs</string>
+    <string name="label_title_remove_call_logs">Remove Call History</string>
+    <string name="label_title_refresh_call_logs">Refresh Call History</string>
+    <string name="label_title_remove_contacts">Remove Contacts</string>
+    <string name="label_title_info">Alert</string>
+    <string name="label_title_enabled">Enabled?</string>
+    <string name="label_msg_enabled">Check to enable call blocking</string>
+    <string name="label_msg_disabled">Uncheck to disable call blocking</string>
+    <string name="label_call_settings">Call Handling</string>
+    <string name="label_block_rules">Block Rules</string>
+    <string name="label_back">  &lt;</string>
+    <string name="label_service_settings">Service Settings</string>
+    <string name="label_title_status_notify">Icon on notification area</string>
+    <string name="label_off_status_notify">Check to enable icon on status bar when app is enabled</string>
+    <string name="label_on_status_notify">Uncheck to disable icon on status bar</string>
+    <string name="label_title_service_control">Service Control</string>
+    <string name="label_service_start_stop">Start/stop service</string>
+    <string name="label_start">START</string>
+    <string name="label_stop">STOP</string>
+    <string name="label_default_phone_type">No</string>
+    <string name="label_title_add_contact_manual">Manual Number Input</string>
+    <string name="label_title_call_handling">Call Handling</string>
+    <string name="label_title_block_type">Block Types</string>
+
+    <!-- Menu label -->
+    <string name="menu_label_add_blocked_contact">Add Contact</string>
+    <string name="menu_label_add_blocked_call_log">Add Call Log</string>
+    <string name="menu_label_delete_blocked_contact">Delete Contact</string>
+    <string name="menu_label_clear_call_log">Clear</string>
+    <string name="menu_label_refresh_call_log">Refresh</string>
+    <string name="menu_label_add_from_call_log">Call Log</string>
+    <string name="menu_label_add_from_contact">Contact</string>
+    <string name="menu_label_add_manual">Manual</string>
+
+    <!-- Dialog type -->
+
+    <string name="dialog_tag_add_contacts">contactdialog</string>
+    <string name="dialog_tag_no_contact">nocontactdialog</string>
+    <string name="dialog_tag_remove_contacts">removecontactdialog</string>
+    <string name="dialog_tag_no_call_log">nocalllogdialog</string>
+    <string name="dialog_tag_add_call_logs">calllogdialog</string>
+    <string name="dialog_tag_remove_call_logs">removecalllogdialog</string>
+    <string name="dialog_tag_refresh_call_logs">refreshcalllogdialog</string>
+
+    <!-- Alert -->
+    <string name="alert_no_contact_selected">You must select at least 1 contact</string>
+    <string name="alert_no_call_log_selected">You must select at least 1 call log</string>
+
+    <!-- Message -->
+    <string name="msg_synccontactsdialog_first_time">Synchronizing contacts at first time. Wait a moment please…</string>
+    <string name="msg_synccontactsdialog_anytime">Synchronizing contacts. Wait a moment please…</string>
+    <string name="msg_synccontactsdialog_refresh">Refreshing contacts. Wait a moment please…</string>
+    <string name="msg_contact_dialog_retrieve_title">Contacts</string>
+    <string name="msg_contact_dialog_retrieve_message">Retrieving contacts…</string>
+    <string name="msg_block_selected_contacts">Block selected contacts?</string>
+    <string name="msg_block_selected_call_logs">Block selected call log numbers?</string>
+    <string name="msg_remove_call_logs">Remove call history?</string>
+    <string name="msg_refresh_call_logs">Refresh call history?</string>
+    <string name="msg_remove_selected_contacts">Remove selected contacts?</string>
+    <string name="msg_add_contacts">contact(s) have been added to the blocked list</string>
+    <string name="msg_add_call_logs">call log(s) have been added to the blocked list</string>
+    <string name="msg_remove_contacts">contact(s) have been removed from the blocked list</string>
+    <string name="msg_notification_start_message">SimpleBlocker is running</string>
+    <string name="msg_notification_stop_message">SimpleBlocker is stopped</string>
+    <string name="msg_notification">SimpleBlocker notification</string>
+    <string name="msg_app_image">SimpleBlocker image</string>
+    <string name="msg_service_started">SimpleBlocker service has been started</string>
+    <string name="msg_service_stopped">SimpleBlocker service has been stopped</string>
+    <string name="msg_service_failure">An unexpected error has occurred!</string>
+    <string name="msg_adding_contacts">Adding contacts&#8230;</string>
+    <string name="msg_adding_call_logs">Adding call logs&#8230;</string>
+    <string name="msg_removing_contacts">Removing contacts&#8230;</string>
+    <string name="msg_prompt_configure">Add contacts to block or configure block rules in the Settings tab</string>
+    <string name="msg_hint_type_here">Type number here..</string>
+    <string name="msg_number_is_already_blocked">The number is already in blocked list</string>
+    <string name="msg_number_is_blocked">Number is added to blocked list</string>
+    <string name="msg_call_timestamp" formatted="false">%1$s at %2$s</string>
+    <string name="msg_cleared_call_logs" formatted="false">Call history is cleared</string>
+    <string name="msg_removing_call_logs">Removing call history&#8230;</string>
+    <string name="msg_refreshing_call_logs">Refreshing call history&#8230;</string>
+    <string name="msg_refreshed_call_logs">Call history is refreshed&#8230;</string>
+    
+
+</resources>

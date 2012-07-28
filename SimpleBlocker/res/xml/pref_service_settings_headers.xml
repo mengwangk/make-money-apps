@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <header
+        android:fragment="com.simpleblocker.ui.activities.PrefsActivity$PrefsFragment"
+        android:icon="@drawable/ic_launcher"
+        android:title="Service Settings" >
+        <extra
+            android:name="pref-resource"
+            android:value="pref_service_settings" />
+    </header>
+    
+ <!--    <header
+        android:fragment="my.domain.app.PrefsActivity$PrefsFragment"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Category 2 prefs" >
+        <extra
+            android:name="pref-resource"
+            android:value="app_prefs_cat2" />
+    </header>
+    <header
+        android:fragment="my.domain.app.PrefsActivity$PrefsFragment"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Category 3 prefs" >
+        <extra
+            android:name="pref-resource"
+            android:value="app_prefs_cat3" />
+    </header> 
+    <header
+        android:icon="@drawable/ic_stat_question"
+        android:summary="link to web site"
+        android:title="category 4" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.makemoneywithmyapps.com" />
+    </header>
+
+-->
+
+</preference-headers>
