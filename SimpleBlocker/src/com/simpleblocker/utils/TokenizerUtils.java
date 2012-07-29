@@ -2,6 +2,7 @@ package com.simpleblocker.utils;
 
 import java.util.StringTokenizer;
 
+import android.text.TextUtils;
 import android.util.Log;
 
 /**
@@ -30,7 +31,7 @@ public class TokenizerUtils {
 				delim = DEFAULT_DELIM;
 
 			// If phone number is different from null we parse it.
-			if (phoneNumber != null) {
+			if (phoneNumber != null && !TextUtils.isEmpty(phoneNumber)) {
 
 				/*
 				 * Separate the phone number into tokens which the delim string

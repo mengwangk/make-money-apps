@@ -13,7 +13,7 @@
     </string-array>
     <string-array name="handle_call">
         <item>Hang up call</item>
-        <item>Silent the call</item>
+        <item>Silence the call</item>
     </string-array>
     <string-array name="block_type">
         <item>Blocked Contacts</item>

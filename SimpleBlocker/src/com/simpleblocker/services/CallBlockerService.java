@@ -23,6 +23,7 @@ public final class CallBlockerService extends Service {
 	public int onStartCommand(Intent intent, int flags, int startId) {
 
 		String incomingCallNumber = intent.getExtras().getString(AppConfig.PARAM_INCOMING_CALL_NUMBER);
+		if (incomingCallNumber == null) incomingCallNumber = "";
 		IncomingCallOperations incomingCallOperations = new IncomingCallOperations(incomingCallNumber);
 
 		// If i use threads

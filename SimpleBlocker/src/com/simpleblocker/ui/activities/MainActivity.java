@@ -15,6 +15,7 @@ import android.widget.SlidingDrawer.OnDrawerOpenListener;
 
 import com.simpleblocker.R;
 import com.simpleblocker.listeners.ContactDialogListener;
+import com.simpleblocker.operations.IncomingCallOperations;
 import com.simpleblocker.ui.activities.base.BaseFragmentActivity;
 import com.simpleblocker.ui.adapters.PageViewerHelpAdapter;
 import com.simpleblocker.ui.adapters.PageViewerTabsAdapter;
@@ -87,7 +88,7 @@ public class MainActivity extends BaseFragmentActivity implements ContactDialogL
 		 * if (savedInstanceState != null) {
 		 * tabHost.setCurrentTabByTag(savedInstanceState.getString("tab")); }
 		 */
-
+		
 		pageViewerTabsAdapter = new PageViewerTabsAdapter(getSupportFragmentManager());
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(pageViewerTabsAdapter);

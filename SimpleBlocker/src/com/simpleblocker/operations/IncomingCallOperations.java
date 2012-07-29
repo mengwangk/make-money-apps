@@ -3,13 +3,16 @@ package com.simpleblocker.operations;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
+import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.PhoneLookup;
+import android.text.TextUtils;
 import android.util.Log;
 
 import com.simpleblocker.SimpleBlockerApp;
 import com.simpleblocker.data.DbHelper;
 import com.simpleblocker.data.models.BlockedCallLog;
 import com.simpleblocker.data.models.EmptyBlockedCallLog;
+import com.simpleblocker.data.models.Phone;
 import com.simpleblocker.prefs.Prefs;
 import com.simpleblocker.utils.AppConfig;
 import com.simpleblocker.utils.ExceptionUtils;
@@ -58,7 +61,10 @@ public final class IncomingCallOperations extends Thread {
 
 			Prefs prefs = new Prefs(SimpleBlockerApp.getContext());
 			String phoneNumberWhithoutDashes = TokenizerUtils.tokenizerPhoneNumber(incomingCallNumber, null);
-			String contactName = getContactName(phoneNumberWhithoutDashes);
+			if (TextUtils.isEmpty(phoneNumberWhithoutDashes)) phoneNumberWhithoutDashes = "";
+			String contactName = "";
+			if (!TextUtils.isEmpty(incomingCallNumber))
+				contactName = getContactName(phoneNumberWhithoutDashes);
 
 			// Put the mobile phone in silent mode (sound+vibration)
 			// putRingerModeSilent();
@@ -118,14 +124,35 @@ public final class IncomingCallOperations extends Thread {
 		String contactName = "";
 
 		try {
-			Uri personUri = Uri.withAppendedPath(ContactsContract.PhoneLookup.CONTENT_FILTER_URI, incomingNumber);
+			// Search in phone storage
+			Uri personUri = Uri.withAppendedPath(ContactsContract.PhoneLookup.CONTENT_FILTER_URI, Uri.encode(incomingNumber));
 			Cursor cur = SimpleBlockerApp.getContext().getContentResolver()
-					.query(personUri, new String[] { PhoneLookup.DISPLAY_NAME }, null, null, null);
-			if (cur.moveToFirst()) {
-				int nameIdx = cur.getColumnIndex(PhoneLookup.DISPLAY_NAME);
+					.query(personUri, new String[] { ContactsContract.PhoneLookup.DISPLAY_NAME }, null, null, null);
+			if (cur.moveToNext()) {
+				int nameIdx = cur.getColumnIndex(ContactsContract.PhoneLookup.DISPLAY_NAME);
 				contactName = cur.getString(nameIdx);
 			}
 			cur.close();
+
+			
+			/*if (TextUtils.isEmpty(contactName)) {
+				// Try searching in SIM
+				String where = ContactsContract.Data.MIMETYPE + " = '" + ContactsContract.CommonDataKinds.Phone.CONTENT_ITEM_TYPE + "' AND "
+						+ ContactsContract.CommonDataKinds.Phone.NUMBER + "='" + incomingNumber + "'";
+				Cursor phonesCursor = SimpleBlockerApp.getContext().getContentResolver()
+						.query(ContactsContract.Data.CONTENT_URI, null, where, null, null);
+
+				Log.d(AppConfig.LOG_TAG, "count: " + phonesCursor.getCount());
+
+				// While the phonesCursor has content
+				while (phonesCursor.moveToNext()) {
+					String phoneNumber = phonesCursor.getString(phonesCursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.CONTACT_ID));
+				}
+				// close the phones cursor
+				phonesCursor.close();
+
+			}
+*/
 		} catch (Exception e) {
 			Log.e(AppConfig.LOG_TAG, ExceptionUtils.getString(e));
 		}
