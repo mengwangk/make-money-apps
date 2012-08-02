@@ -72,7 +72,10 @@ public final class SimpleBlockerNotifier {
 
 				notificationManager.notify(notificationId, notification);
 
-			} else if (notificationManager != null) {
+			} else  {
+				if (notificationManager == null) {
+					notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+				}
 				Log.d(AppConfig.LOG_TAG, "notification canceled");
 				notificationManager.cancel(notificationId);
 			}
