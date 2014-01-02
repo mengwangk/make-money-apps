@@ -2,7 +2,6 @@ package com.smsspeaker;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Locale;
 
@@ -151,7 +150,7 @@ public final class StartMenuActivity extends TabActivity implements TextToSpeech
 			// Set TTS settings
 			Prefs prefs = new Prefs(this);
 			int languageIndex = Integer.parseInt(prefs.getLanguage());
-			if (languageIndex >= 0) {
+			if (languageIndex >= 0 && application.getAvailableLocales() != null && application.getAvailableLocales().size() > 0) {
 				application.getTTS().setLanguage(application.getAvailableLocales().get(languageIndex));
 			}
 			application.getTTS().setSpeechRate(Float.parseFloat(prefs.getLanguageSpeed()));
@@ -159,11 +158,13 @@ public final class StartMenuActivity extends TabActivity implements TextToSpeech
 			// Add the tabs
 			addTabs();
 
-			/*InboundData m = new InboundData("1234567890", "testing message", Constants.DATA_TYPE_SMS, new GregorianCalendar().getTime());
-			m.isNew = true;
-			Intent intent = new Intent(Constants.BROADCAST_ACTION_SMS_RECEIVED);
-			intent.putExtra(Constants.PARAM_MSG, m);
-			speakOut(intent);*/
+			/*
+			 * InboundData m = new InboundData("1234567890", "testing message",
+			 * Constants.DATA_TYPE_SMS, new GregorianCalendar().getTime());
+			 * m.isNew = true; Intent intent = new
+			 * Intent(Constants.BROADCAST_ACTION_SMS_RECEIVED);
+			 * intent.putExtra(Constants.PARAM_MSG, m); speakOut(intent);
+			 */
 
 		} else {
 			// TTS not available, show message

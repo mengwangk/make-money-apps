@@ -54,25 +54,28 @@ public final class SimpleBlockerNotifier {
 				CharSequence message;
 				message = SimpleBlockerApp.getContext().getText(R.string.msg_notification_start_message);
 
-				Notification notification = new Notification(R.drawable.ic_launcher, message, System.currentTimeMillis());
-				notification.flags |= Notification.FLAG_ONGOING_EVENT | Notification.FLAG_NO_CLEAR;
-				notification.setLatestEventInfo(context, title, message, notificationIntent(context));
+				// Notification notification = new
+				// Notification(R.drawable.ic_launcher, message,
+				// System.currentTimeMillis());
+				// notification.flags |= Notification.FLAG_ONGOING_EVENT |
+				// Notification.FLAG_NO_CLEAR;
+				// notification.setLatestEventInfo(context, title, message,
+				// notificationIntent(context));
 
-				/*
-				 * Notification.Builder builder = new
-				 * Notification.Builder(context); Notification notification =
-				 * builder
-				 * .setContentIntent(notificationIntent(context)).setSmallIcon
-				 * (R.drawable.ic_launcher)
-				 * .setTicker(message).setWhen(System.currentTimeMillis
-				 * ()).setAutoCancel
-				 * (true).setContentTitle(title).setContentText(message)
-				 * .getNotification();
-				 */
+				Notification.Builder builder = new
+						Notification.Builder(context);
+				Notification notification =
+						builder
+								.setContentIntent(notificationIntent(context)).setSmallIcon
+								(R.drawable.ic_launcher)
+								.setTicker(message).setWhen(System.currentTimeMillis
+										()).setAutoCancel
+								(true).setContentTitle(title).setContentText(message)
+								.getNotification();
 
 				notificationManager.notify(notificationId, notification);
 
-			} else  {
+			} else {
 				if (notificationManager == null) {
 					notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 				}

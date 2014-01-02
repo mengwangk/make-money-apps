@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\MySpace\\2011\\workspace\\SMSSpeaker\\src\\com\\android\\internal\\telephony\\ITelephony.aidl
+ * Original file: C:\\MySpace\\2011\\workspace\\make-money-apps\\SMSSpeaker\\src\\com\\android\\internal\\telephony\\ITelephony.aidl
  */
 package com.android.internal.telephony;
 //import android.telephony.NeighboringCellInfo;

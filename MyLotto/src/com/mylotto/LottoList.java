@@ -22,14 +22,14 @@ import com.mylotto.helper.Constants;
  * Display lotto results.
  * 
  * @author MEKOH
- *
+ * 
  */
 public final class LottoList extends BaseActivity {
 
 	private static final String CLASS_TAG = LottoList.class.getSimpleName();
 
 	private TextView empty;
-	//private ProgressDialog progressDialog;
+	// private ProgressDialog progressDialog;
 	private LottoAdapter lottoAdapter;
 	private List<Lotto> lottos;
 	private Prefs prefs;
@@ -42,7 +42,7 @@ public final class LottoList extends BaseActivity {
 		public void handleMessage(final Message msg) {
 			Log.v(Constants.LOG_TAG, " " + CLASS_TAG
 					+ " worker thread done, setup LottoAdapter");
-			//progressDialog.dismiss();
+			// progressDialog.dismiss();
 			if ((lottos == null) || (lottos.size() == 0)) {
 				empty.setText(R.string.no_data);
 			} else {
@@ -63,7 +63,7 @@ public final class LottoList extends BaseActivity {
 		this.empty = (TextView) findViewById(R.id.empty);
 
 		// set list properties
-		final ListView listView = (ListView) findViewById(R.id.list);//getListView();
+		final ListView listView = (ListView) findViewById(R.id.list);// getListView();
 		listView.setItemsCanFocus(false);
 		listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 		listView.setEmptyView(this.empty);
@@ -89,7 +89,8 @@ public final class LottoList extends BaseActivity {
 			Lotto selectedLotto = lottos.get(position);
 			Log.d(CLASS_TAG, "Selected lotto: " + selectedLotto.name);
 
-			// set the current lotto to the Application (global state placed there)
+			// set the current lotto to the Application (global state placed
+			// there)
 			MyLottoApplication application = (MyLottoApplication) getApplication();
 			application.setSelectedLotto(selectedLotto);
 
@@ -107,9 +108,9 @@ public final class LottoList extends BaseActivity {
 	private void loadLottos() {
 		Log.v(Constants.LOG_TAG, " " + CLASS_TAG + " loadLottos");
 
-		//this.progressDialog = ProgressDialog.show(this,
-		//		getString(R.string.working), getString(R.string.retrieving),
-		//		true, false);
+		// this.progressDialog = ProgressDialog.show(this,
+		// getString(R.string.working), getString(R.string.retrieving),
+		// true, false);
 
 		// get lottos in a separate thread for ProgressDialog/Handler
 		// when complete send "empty" message to handler
