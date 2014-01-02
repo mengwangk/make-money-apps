@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="http_service_name">myMobKit Server</string>
+    <string name="notif_http_service" formatted="false">%1$s</string>
+    <string name="notif_service">myMobKit notification</string>
+    <string name="default_login_required">true</string>
+    <string name="default_http_user_name">admin</string>
+    <string name="default_http_user_password">password123</string>
+    <string name="default_http_port">1688</string>
+    <string name="default_start_stop_service">false</string>
+    <string name="default_auto_start_service">false</string>
+    <string name="default_video_streaming_port">6888</string>
+    <string name="default_motion_detection">false</string>
+    <string name="default_motion_detection_threshold">50</string>
+    <string name="default_motion_detection_contour_thickness">2</string>
+    <string name="default_motion_detection_algorithm">1</string>
+    <string name="default_video_streaming_image_quality">40</string>
+    <string name="default_face_detection">false</string>
+    <string name="default_face_detection_size">0.2</string>
+    <string name="default_stream_detected_object">false</string>
+    <string name="default_alarm_trigger_interval">20</string>
+    <string name="default_alarm_no_of_triggers">1</string>
+    <string name="default_alarm_stealth_mode">false</string>
+    <string name="default_alarm_phone_name">myMobKit - My Phone</string>
+    <string name="default_alarm_sound">false</string>
+    <string name="default_alarm_image_local_storage">false</string>
+    <string name="default_alarm_image_cloud_storage">true</string>
+    <string name="default_alarm_remote_startup">false</string>
+    <string name="default_alarm_remote_startup_password">mymobkit</string>
+    <string name="label_video_streaming_port_summary">Port used to serve the web page, video and audio</string>
+    <string name="label_video_streaming_port_title">Streaming port</string>
+    <string name="label_video_streaming_image_summary">JPEG image quality</string>
+    <string name="label_video_streaming_image_title">Image quality (1&#8211;100)</string>
+    <string name="label_motion_detection_summary">Check this to enable motion detection</string>
+    <string name="label_motion_detection_title">Motion detection</string>
+    <string name="label_motion_detection_threshold_summary">Threshold for motion detection</string>
+    <string name="label_motion_detection_threshold_title">Threshold (1&#8211;100)</string>
+    <string name="label_motion_detection_contour_thickess_summary">Contour thickness for the detected motion object</string>
+    <string name="label_motion_detection_contour_thickess_title">Contour thickness (-1&#8211;10)</string>
+    <string name="label_motion_detection_algorithm_summary">Algorithm to detect motion</string>
+    <string name="label_motion_detection_algorithm_title">Motion detection algorithm</string>
+    <string name="label_alarm_trigger_interval_summary">Minimum time between each alarms</string>
+    <string name="label_alarm_trigger_interval_title">Alarm interval</string>
+    <string name="label_alarm_no_of_triggers_summary">Number of motion detections before the alarm triggers</string>
+    <string name="label_alarm_no_of_triggers_title">Number of triggers</string>
+    <string name="label_face_detection_summary">Check this to enable face detection</string>
+    <string name="label_face_detection_title">Face detection</string>
+    <string name="label_face_detection_size_summary">Configure face detection size</string>
+    <string name="label_face_detection_size_title">Detection size</string>
+    <string name="label_face_detection_summary">Check this to enable face detection</string>
+    <string name="label_alarm_stealth_mode_title">Stealth mode</string>
+    <string name="label_alarm_stealth_mode_summary">Close application when device is touched</string>
+    <string name="label_stream_detected_object_title">Stream detected motion and face</string>
+    <string name="label_stream_detected_object_summary">Check this so that detected motion and face are streamed</string>
+    <string name="label_alarm_phone_name_title">Phone name</string>
+    <string name="label_alarm_phone_name_summary">Name to identify the device in outgoing SMS and/or email</string>
+    <string name="label_alarm_sound_summary">Play an alert sound when alarm is triggered</string>
+    <string name="label_alarm_sound_title">Sound</string>
+    <string name="label_alarm_image_local_storage_summary">Store surveillance images in device storage</string>
+    <string name="label_alarm_image_local_storage_title">Local storage</string>
+    <string name="label_alarm_image_cloud_storage_summary">Store surveillance images on the cloud</string>
+    <string name="label_alarm_image_cloud_storage_title">Cloud storage</string>
+    <string name="label_alarm_remote_startup_summary">Allow app to be started by SMS (send "alarmstart yourpassword" to the device)</string>
+    <string name="label_alarm_remote_startup_title">Enable remote startup</string>
+    <string name="label_alarm_remote_startup_password_summary">Password to allow remote startup of alarm</string>
+    <string name="label_alarm_remote_startup_password_title">Password protection</string>
+    <string name="label_control_panel_security">Security</string>
+    <string name="label_control_panel_service">Service</string>
+    <string name="label_video_streaming_audio">Audio</string>
+    <string name="label_control_panel_login_required_summary">When this is checked, user is required to login to control panel</string>
+    <string name="label_control_panel_login_required_title">Login required</string>
+    <string name="label_control_panel_user_name_summary">Login user name</string>
+    <string name="label_control_panel_user_name_title">Login user name</string>
+    <string name="label_control_panel_user_password_summary">Login user password</string>
+    <string name="label_control_panel_user_password_title">Login user password</string>
+    <string name="label_control_panel_port_summary">HTTP listening port</string>
+    <string name="label_control_panel_port_title">Listening port</string>
+    <string name="label_control_panel_status_summary">Check this to start control panel service</string>
+    <string name="label_control_panel_status_title">Start/stop service</string>
+    <string name="label_control_panel_url_summary">URL of control panel</string>
+    <string name="label_control_panel_url_title">URL</string>
+    <string name="label_control_panel_auto_start_summary">Check this to auto start control panel service upon reboot</string>
+    <string name="label_control_panel_auto_start_title">Auto start service</string>
+
+    <string-array name="pref_face_detection_size_titles">
+        <item>20 Percent</item>
+        <item>30 Percent</item>
+        <item>40 Percent</item>
+        <item>50 Percent</item>
+    </string-array>
+    <string-array name="pref_face_detection_size_values">
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.5</item>
+    </string-array>
+    <string-array name="pref_motion_detection_algorithm_titles">
+        <item>Simple</item>
+        <item>Background Subtraction</item>
+        <item>Motion History Image</item>
+    </string-array>
+    <string-array name="pref_motion_detection_algorithm_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="pref_alarm_trigger_interval_titles">
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>4 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="pref_alarm_trigger_interval_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>1200</item>
+        <item>1500</item>
+        <item>1800</item>
+        <item>3600</item>
+    </string-array>
+
+</resources>

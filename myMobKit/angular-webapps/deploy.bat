@@ -1,0 +1,1 @@
+xcopy /S/E build\*.* ..\MyMobKit\assets\

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="com.admob.android.ads.AdView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="primaryTextColor" format="color" />
+        <attr name="secondaryTextColor" format="color" />
+        <attr name="keywords" format="string" />
+        <attr name="refreshInterval" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="buttonBarStyle" format="reference" />
+        <attr name="buttonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SeekBarDialogPreference">
+        <attr name="android:max" />
+        <attr name="min" format="integer" />
+        <attr name="progressTextSuffix" format="string" />
+    </declare-styleable>
+
+</resources>

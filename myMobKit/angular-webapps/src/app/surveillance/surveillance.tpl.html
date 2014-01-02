@@ -1,0 +1,121 @@
+<form name="surveillance_form">
+	<div class="row-fluid">
+		<!-- <div class="video_view" id="video_plane" ng-style="style()" resize video-src="videoSrc"></div>
+ -->
+		<div class="video_view" id="video_plane" videoplayer
+			video-src="videoSrc"></div>
+		<div class="audio_view" ng-show="enableAudio">
+			<div id="jquery_jplayer_1" class="jp-jplayer" data-audio="audioSrc"
+				data-autoplay="autoPlay" data-pauseothers="true" jplayer></div>
+
+			<div id="jp_container_1" class="jp-audio">
+				<div class="jp-type-single">
+					<div class="jp-gui jp-interface">
+						<ul class="jp-controls">
+							<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+							<li><a href="javascript:;" class="jp-pause" tabindex="1"
+								style="display: block">pause</a></li>
+							<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+							<li><a href="javascript:;" class="jp-mute" tabindex="1"
+								title="mute" style="display: block">mute</a></li>
+							<li><a href="javascript:;" class="jp-unmute" tabindex="1"
+								title="unmute" style="display: block">unmute</a></li>
+							<li><a href="javascript:;" class="jp-volume-max"
+								tabindex="1" title="max volume">max volume</a></li>
+						</ul>
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-volume-bar">
+							<div class="jp-volume-bar-value"></div>
+						</div>
+						<div class="jp-time-holder">
+							<div class="jp-current-time"></div>
+							<div class="jp-duration"></div>
+
+							<ul class="jp-toggles">
+								<li><a href="javascript:;" class="jp-repeat" tabindex="1"
+									title="repeat">repeat</a></li>
+								<li><a href="javascript:;" class="jp-repeat-off"
+									tabindex="1" title="repeat off" style="display: block">repeat
+										off</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="jp-no-solution">
+						<span>Update Required</span> To play the media you will need to
+						either update your browser to a recent version or update your <a
+							href="http://get.adobe.com/flashplayer/" target="_blank">Flash
+							plugin</a>.
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="control_view">
+
+		<div class="control_view">
+
+			<table width='100%'>
+				<tr>
+					<td align='left'><input type="radio"
+						ng-model="streamingMethod" value="js" ng-disabled="inStreaming">
+						Frame update (supported on all platforms)</td>
+					<td align='right'><label class="control-label"
+						for="resolutionValue">Video size:</label> <select
+						class="chzn-select" ng-model="resolutionValue" ng-options="res | resFilter:this for res in resolutions"
+						ng-change="selectRes()">
+					</select></td>
+					<td align='right'>&nbsp;&nbsp;&nbsp; <label
+						class="control-label" for="canvasSize">Canvas size:</label> <select
+						class="chzn-select" ng-model="canvasSize" required
+						ng-options="size | sizeFilter:this for size in canvasSizes"
+						ng-change="selectCanvasSize()">
+					</select>
+					</td>
+					<td align='right'><input type="checkbox" id="checkbox-audio"
+						ng-model="enableAudio" ng-click="selectAudio($event)" /> <label
+						for="checkbox-audio">Enable audio (experimental)</label></td>
+				</tr>
+				<tr>
+					<td align='left'><input type="radio"
+						ng-model="streamingMethod" value="mjpg" ng-disabled="inStreaming">
+						Built-in browser (supported on Chrome and Firefox)</td>
+					<td colspan='3' align='right'>
+						<button class="btn" ng-click="showMediaInfo()">
+							<i class='icon-eye-open'></i> Media Information
+						</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="control_view">
+			<input id="btn-camera" type="button" class="btn btn-large btn-block"
+				value="{{ !inStreaming ? 'Turn on' : 'Turn off'}}" ng-click="playClick()"
+				ng-disabled="surveillance_form.$invalid" />
+		</div>
+		
+			<div class="control_view">
+			{{debugMsg}}
+		</div>
+		
+	</div>
+
+
+<p><br/>
+	<div ng-show="mediaInfo">
+	
+	<h4>Media Information</h4>
+	Video: {{videoSrc.path}}<br/>
+	Audio: {{audioSrc}}
+	
+	<br/><br/>
+	Motion JPEG: {{ surveillanceUrl  + 'video/live.mjpg'}}
+	</div>
+</p>
+</form>

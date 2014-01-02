@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" ng-app="mymobkit" id="ng-app"
+	ng-controller="AppCtrl">
+<head>
+
+	<!--[if lte IE 8]>
+		<script src="assets/js/json2.js"></script>
+	<![endif]-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title ng-bind="pageTitle"></title>
+<link rel="icon" type="image/png" href="assets/images/favicon.png" />
+<link rel="shortcut icon" href="assets/images/favicon.ico" />
+<link href="assets/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+<!-- social media tags -->
+<meta property="og:title" content="mymobkit" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://bit.ly/GFVaCd" />
+<meta property="og:description" content="myMobKit Android application"/>
+
+
+<!-- compiled CSS -->
+<% styles.forEach( function ( file ) { %>
+<link rel="stylesheet" type="text/css" href="<%= file %>" media="all" />
+<% }); %>
+
+<!-- compiled JavaScript -->
+<% scripts.forEach( function ( file ) { %>
+<script type="text/javascript" src="<%= file %>"></script>
+<% }); %>
+
+</head>
+<body>
+	<div class="container">
+		<div class="masthead">
+			<img src='assets/images/mymobkit.png' align='right' /> <br />
+			<h3 class="muted">
+				Control Panel<small>
+			</h3>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container">
+						<ul class="nav">
+							<li ui-route="/home" ng-class="{active:$uiRoute}"><a
+								href="#/home"> <i class="icon-home"></i> Home
+							</a></li>
+							<li ui-route="/surveillance" ng-class="{active:$uiRoute}"><a
+								href="#/surveillance"> <i class="icon-eye-open"></i>
+									Surveillance
+							</a></li>
+
+							<!--  
+                <li>
+                  <a href="#/messaging">
+                    <i class="icon-file-text-alt"></i>
+                    Messaging
+                  </a>
+                </li>
+                <li>
+                  <a href="#/contact">
+                    <i class="icon-male"></i>
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="#/gallery">
+                    <i class="icon-picture"></i>
+                    Gallery
+                  </a>
+                </li>
+                -->
+							<li><a href="#/gateway"> <i class="icon-file-text-alt"></i>
+									Messaging
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" ui-view="main"></div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-inner">
+				<ul class="social">
+					<li><a target="_blank"
+						href="https://twitter.com/makemoneyapps"><i
+							class="icon-twitter-sign"></i></a></li>
+					<li><a target="_blank"
+						href="http://www.linkedin.com/pub/meng-wang-koh/41/817/aab"><i
+							class="icon-linkedin-sign"></i></a></li>
+				</ul>
+				<p align="center">
+					Copyright &copy; <a href="http://www.makemoneywithmyapps.com"><strong>TWIT88.COM</strong></a>
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

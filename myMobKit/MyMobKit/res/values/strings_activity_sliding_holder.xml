@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">myMobKit</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_done">Done</string>
+    <string name="button_back">Back</string>
+    <string name="button_exit">Exit</string>
+    <string name="title_about">myMobKit Android client v</string>
+    <string name="mymobkit_url">http://www.mymobkit.com</string>
+    <string name="label_title_home">Home</string>
+    <string name="label_title_settings">Settings</string>
+    <string name="label_title_camera">Surveillance</string>
+    <string name="label_title_utilities">My Workspace</string>
+    <string name="label_title_feedback">Feedback</string>
+    <string name="label_title_help">Help</string>
+    <string name="label_video_streaming">Camera Mode</string>
+    <string name="label_camera_monitor">My Cameras</string>
+    <string name="label_alarm">Alarm</string>
+    <string name="label_messaging_service">Messaging Service</string>
+    <string name="label_motion_detection">Motion Detection</string>
+    <string name="label_face_detection">Face Detection</string>
+    <string name="label_motion_detector">Motion Detector</string>
+    <string name="label_barcode_scanner">Barcode Scanner</string>
+    <string name="label_augmented_reality">Augmented Reality</string>
+    <string name="label_control_panel">Control Panel</string>
+    <string name="label_messaging">Messaging</string>
+    <string name="label_ocr">OCR</string>
+    <string name="label_gateway_start_stop">Start/stop gateway</string>
+    <string name="label_start">Start</string>
+    <string name="label_stop">Stop</string>
+    <string name="label_dialog_yes">Yes</string>
+    <string name="label_dialog_no">No</string>
+    <string name="msg_confirm_exit">Quit myMobKit?</string>
+
+</resources>

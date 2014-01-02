@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="msg_access_query">Detecting internet</string>
+    <string name="msg_access_query_error">Access from internet could not blocked. Verify your router</string>
+    <string name="msg_error">Please enable WIFI</string>
+    <string name="msg_microphone_failure">Microphone failed to initialize</string>
+    <string name="camera_front">Front Camera</string>
+    <string name="camera_back">Back Camera</string>
+    <string name="camera_url_show">Show URL</string>
+    <string name="camera_url_hide">Hide URL</string>
+
+    <string-array name="camera_video_menu">
+        <item>@string/camera_url_hide</item>
+        <item>@string/camera_front</item>
+        <item>Resolution</item>
+        <item>Settings</item>
+        <item>Quit</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="label_dialog_ok">OK</string>
+    <string name="label_dialog_cancel">Cancel</string>
+    <string name="label_title_resolution">Resolution</string>
+
+</resources>

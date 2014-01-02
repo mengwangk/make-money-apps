@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+
+</resources>

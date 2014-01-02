@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/mymobkit/camera/AutoFocusManager.java|com/mymobkit/camera/CameraConfigurationManager.java|com/mymobkit/camera/CameraManager.java|com/mymobkit/camera/FrontLightMode.java|com/mymobkit/camera/PreviewCallback.java|com/mymobkit/camera/open/OpenCameraInterface.java|com/mymobkit/common/AmbientLightManager.java|com/mymobkit/net/CommHandler.java|com/mymobkit/net/InetHandler.java|com/mymobkit/ui/activity/ActivityHolder.java|com/mymobkit/ui/activity/HelpActivity.java|com/mymobkit/ui/activity/MainActivity.java|com/mymobkit/ui/activity/SettingsActivity1.java|com/mymobkit/ui/activity/base/BaseFragmentActivity.java|com/mymobkit/ui/fragment/BarcodeFragment.java|com/mymobkit/ui/fragment/CameraFragment.java|com/mymobkit/ui/fragment/HomeFragment.java|com/mymobkit/ui/fragment/SmsGatewayFragment.java|com/mymobkit/ui/fragment/UtilitiesFragment.java|com/mymobkit/video/EncodeHandler.java|com/mymobkit/ui/adapter/mymobkitAdapter.java|com/mymobkit/utilities/WebControlPanel.java|com/mymobkit/barcode/IntentIntegratorV30.java|com/mymobkit/ui/activity/CopyOfVideoStreamingActivity.java|com/mymobkit/service/VideoStreamingActivity.java|com/mymobkit/bak/" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/actionbarsherlock"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/viewpageindicator"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SlidingMenu"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PinnedHeaderListView"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/OpenCV Library - 2.4.6"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

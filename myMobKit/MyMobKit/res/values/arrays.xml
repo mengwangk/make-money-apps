@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="connections_string_array">
+        <item>TCP/IP (WiFi)</item>
+    </string-array>
+    <string-array name="surveillance_settings_string_array">
+        <item>Streaming</item>
+    </string-array>
+    <string-array name="control_panel_string_array">
+        <item>Control Panel</item>
+    </string-array>
+
+</resources>

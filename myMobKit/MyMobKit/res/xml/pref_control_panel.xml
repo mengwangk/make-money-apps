@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ppu="http://schemas.android.com/apk/res-auto" >
+
+    <PreferenceCategory android:title="@string/label_control_panel_security" >
+        <CheckBoxPreference
+            android:defaultValue="@string/default_login_required"
+            android:key="preferences_control_panel_login_required"
+            android:summary="@string/label_control_panel_login_required_summary"
+            android:title="@string/label_control_panel_login_required_title" />
+
+        <EditTextPreference
+            android:defaultValue="@string/default_http_user_name"
+            android:dependency="preferences_control_panel_login_required"
+            android:key="preferences_control_panel_user_name"
+            android:summary="@string/label_control_panel_user_name_summary"
+            android:title="@string/label_control_panel_user_name_title" />
+        <EditTextPreference
+            android:defaultValue="@string/default_http_user_password"
+            android:dependency="preferences_control_panel_login_required"
+            android:key="preferences_control_panel_user_password"
+            android:summary="@string/label_control_panel_user_password_summary"
+            android:title="@string/label_control_panel_user_password_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_control_panel_service" >
+        <EditTextPreference
+            android:defaultValue="@string/default_http_port"
+            android:key="preferences_control_panel_port"
+            android:maxLength="4"
+            android:numeric="integer"
+            android:summary="@string/label_control_panel_port_summary"
+            android:title="@string/label_control_panel_port_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="@string/default_start_stop_service"
+            android:key="preferences_control_panel_status"
+            android:summary="@string/label_control_panel_status_summary"
+            android:title="@string/label_control_panel_status_title" />
+
+        <EditTextPreference
+            android:key="preferences_control_panel_url"
+            android:selectable="false"
+            android:summary="@string/label_control_panel_url_summary"
+            android:title="@string/label_control_panel_url_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="@string/default_auto_start_service"
+            android:dependency="preferences_control_panel_status"
+            android:key="preferences_control_panel_auto_start"
+            android:summary="@string/label_control_panel_auto_start_summary"
+            android:title="@string/label_control_panel_auto_start_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

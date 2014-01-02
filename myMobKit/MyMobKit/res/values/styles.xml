@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Base application theme, dependent on API level. This theme is replaced 
+		by AppBaseTheme from res/values-vXX/styles.xml on newer devices. -->
+	<!-- Theme customizations available in newer API levels can go in res/values-vXX/styles.xml, 
+		while customizations related to backward-compatibility can go here. -->
+	<style name="MyMobKit_Theme" parent="Theme.Sherlock.Light">
+		<item name="actionBarStyle">@style/Widget.MyMobKitTheme.ActionBar</item>
+		<item name="android:actionBarStyle">@style/Widget.MyMobKitTheme.ActionBar</item>
+		<item name="homeAsUpIndicator">@drawable/new_indicator</item>
+		<item name="android:homeAsUpIndicator">@drawable/new_indicator</item>
+		<item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+	</style>
+
+	<style name="Widget.MyMobKitTheme.ActionBar" parent="Widget.Sherlock.Light.ActionBar">
+		<item name="background">#FF1B91E0</item>
+		<item name="android:background">#FF1B91E0</item>
+		<item name="android:titleTextStyle">@style/MyMobKit.ActionBar.TitleTextStyle</item>
+		<item name="titleTextStyle">@style/MyMobKit.ActionBar.TitleTextStyle</item>
+	</style>
+
+	<style name="MyMobKit.ActionBar.TitleTextStyle"
+		parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/abs__background_holo_light</item>
+		<!-- <item name="android:textSize">18sp</item> -->
+	</style>
+
+	<style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+		<item name="android:background">@drawable/custom_tab_indicator</item>
+		<item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+		<item name="android:textColor">#FF555555</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+		<item name="android:dividerPadding">10dp</item>
+		<item name="android:showDividers">middle</item>
+		<item name="android:paddingLeft">8dp</item>
+		<item name="android:paddingRight">8dp</item>
+		<item name="android:fadingEdge">horizontal</item>
+		<item name="android:fadingEdgeLength">8dp</item>
+	</style>
+	
+	<style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+    </style>
+
+
+</resources>
+
+

@@ -1,0 +1,21 @@
+<!--
+ <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/app_name"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_action_home"
+        android:showAsAction="always"
+        android:title="@string/app_name"
+        android:titleCondensed="@string/app_name"
+        android:visible="true">
+    </item>
+
+</menu>

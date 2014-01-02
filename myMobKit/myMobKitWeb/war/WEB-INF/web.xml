@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<filter>
+		<filter-name>ObjectifyFilter</filter-name>
+		<filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>ObjectifyFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>greetServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.GreetingServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>mymobkitServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.MyMobKitService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>signGuestBookServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.SignGuestBookService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>spyServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.SpyServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>messageServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.MessageServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>connectServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.ConnectServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>disconnectServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.DisconnectServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>myWorkspaceServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.MyWorkspaceServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>testServlet</servlet-name>
+		<servlet-class>com.mymobkit.server.TestServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>testServlet</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>spyServlet</servlet-name>
+		<url-pattern>/spy</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>myWorkspaceServlet</servlet-name>
+		<url-pattern>/myworkspace</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>messageServlet</servlet-name>
+		<url-pattern>/message</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>connectServlet</servlet-name>
+		<url-pattern>/_ah/channel/connected/</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>disconnectServlet</servlet-name>
+		<url-pattern>/_ah/channel/disconnected/</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>greetServlet</servlet-name>
+		<url-pattern>/mymobkitweb/greet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>mymobkitServlet</servlet-name>
+		<url-pattern>/mymobkitweb/auth</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>signGuestBookServlet</servlet-name>
+		<url-pattern>/mymobkitweb/sign</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
