@@ -1,7 +1,7 @@
 myMobKit
 =================
 
-** Outdated version. See https://github.com/mengwangk for the updated version.
+**Outdated version. See https://github.com/mengwangk for the updated version.
 
 myMobKit is 
 
